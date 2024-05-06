@@ -123,4 +123,8 @@ function saveStateVariables(variables)
 end
 ```
 
+### ***Important Notes:***
+- `imgui.InputText` requires a character limit passed to it. If it doesn't have one, it will not render.
+- All `imgui.Slider____()` elements require a `min` and `max` value.
+
 If you want to know the full list of `inputs`, `sliders`, and `drags`, check out the [imgui wrapper](https://github.com/Quaver/Quaver/blob/ui-redesign/Quaver.Shared/Scripting/ImGuiWrapper.cs).
