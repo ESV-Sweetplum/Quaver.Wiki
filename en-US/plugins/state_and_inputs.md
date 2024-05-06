@@ -140,3 +140,27 @@ end
 - `imgui.RadioButton` works with a label and a condition in which to mark it as selected. It acts more like a button, as it runs a function when clicked. For more help with buttons, see [visual elements](/docs/plugins/visual_elements).
 
 If you want to know the full list of `inputs`, `sliders`, and `drags`, check out the [imgui wrapper](https://github.com/Quaver/Quaver/blob/ui-redesign/Quaver.Shared/Scripting/ImGuiWrapper.cs).
+
+## Detecting Keypresses
+There are 3 different types of events linked to keypresses. If you want a function to run only once on press, use `utils.IsKeyPressed`:
+```lua
+if (utils.IsKeyPressed(keys.S)) then
+  print("Clicked on the S key.")
+end
+```
+If you want a function to run when a key is released, use `utils.IsKeyReleased`:
+```lua
+if (utils.IsKeyReleased(keys.S)) then
+  print("Released the S key.")
+end
+```
+Finally, if you want the function to be ran every frame a key is held, use `utils.IsKeyDown`:
+```lua
+if (utils.IsKeyDown(keys.S)) then
+  print("The S key is down.")
+end
+```
+***Note: This code may be laggy for those on high FPS and low-end computers.***
+
+## Keys
+A full list of keys can be found [here](https://docs.monogame.net/api/Microsoft.Xna.Framework.Input.Keys.html).
