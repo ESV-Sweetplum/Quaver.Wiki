@@ -163,4 +163,4 @@ end
 ***Note: This code may be laggy for those on high FPS and low-end computers.***
 
 ## Keys
-A full list of keys can be found [here](https://docs.monogame.net/api/Microsoft.Xna.Framework.Input.Keys.html).
+A full list of keys can be found [here](https://docs.monogame.net/api/Microsoft.Xna.Framework.Input.Keys.html). Note that Quaver will not register all of these, so play it safe and limit yourself to the alphabetical keys, space (`keys.Space`), shift (`keys.LeftShift`), control (`keys.LeftControl`), and alt (`keys.LeftAlt`).
