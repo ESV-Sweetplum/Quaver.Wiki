@@ -154,7 +154,7 @@ if (utils.IsKeyReleased(keys.S)) then
   print("Released the S key.")
 end
 ```
-Finally, if you want the function to be ran every frame a key is held, use `utils.IsKeyDown`:
+Finally, if you want the function to be run every frame a key is held, use `utils.IsKeyDown`:
 ```lua
 if (utils.IsKeyDown(keys.S)) then
   print("The S key is down.")
