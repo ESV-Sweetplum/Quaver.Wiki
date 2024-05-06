@@ -136,6 +136,7 @@ end
 
 ### ***Important Notes:***
 - `imgui.InputText` requires a character limit passed to it. If it doesn't have one, it will not render.
-- All `imgui.Slider____()` elements require a `min` and `max` value.
+- All `imgui.Slider____` elements require a `min` and `max` value.
+- `imgui.RadioButton` works with a label and a condition in which to mark it as selected. It acts more like a button, as it runs a function when clicked. For more help with buttons, see [visual elements](/docs/plugins/visual_elements).
 
 If you want to know the full list of `inputs`, `sliders`, and `drags`, check out the [imgui wrapper](https://github.com/Quaver/Quaver/blob/ui-redesign/Quaver.Shared/Scripting/ImGuiWrapper.cs).
