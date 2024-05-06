@@ -70,3 +70,7 @@ end
 ```
 
 These two code blocks are equivalent.
+
+## Separators
+
+You can create a thin, horizontal line between elements using `imgui.Separator()`.
