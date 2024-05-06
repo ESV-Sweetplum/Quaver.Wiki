@@ -93,7 +93,9 @@ function draw()
     inputInt3Vars = {4, 5, 6},
     inputFloat2Vars = {2.71, 3.14},
     inputTextVar = "I love Quaver",
-    sliderIntVar = 50
+    sliderIntVar = 50,
+    checkboxVar = false,
+    radioButtonVar = false
   }
 
   retrieveStateVariables(settings)
@@ -104,6 +106,15 @@ function draw()
   _, inputFloat2Vars = imgui.InputFloat2("2 Float Input", inputFloat2Vars)
   _, inputTextVar = imgui.InputText("Text Input", inputTextVar, MAX_CHARACTERS)
   _, sliderIntVar = imgui.SliderInt("Slider", sliderIntVar, 0, 100)
+  _, checkboxVar = imgui.Checkbox("Checked?", checkboxVar)
+
+  if (imgui.RadioButton("false", not radioButtonVar)) then
+    radioButtonVar = false
+  end
+
+  if (imgui.RadioButton("true", radioButtonVar)) then
+    radioButtonVar = true
+  end
 
   saveStateVariables(settings)
 
