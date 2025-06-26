@@ -49,4 +49,6 @@ end
 
 Once saved, any future changes made to the plugin will show up in the Quaver editor automatically, without you having to reload it. This is called **hot-reloading**, and will be very useful for debugging purposes.
 
-For those who are unfamiliar, Quaver uses the `Dear ImGui` library for drawing elements onto the editor's screen. Since it is relatively complex, the guide for adding new features to your plugin will be in the [Immediate GUI](/docs/plugins/imgui) section.
+For those who are unfamiliar, Quaver uses the `Dear ImGui` library for drawing elements onto the editor's screen. Since it is relatively complex, the guide for adding new features to your plugin will be in the [Immediate GUI](/docs/plugins/imgui) section, where you will learn how to create inputs, buttons, and more.
+
+Of course, all of this doesn't really help you edit maps in any way. To learn how to interact with the Quaver editor, head to the [Editor Interaction](docs/plugins/editor_interaction) page.
