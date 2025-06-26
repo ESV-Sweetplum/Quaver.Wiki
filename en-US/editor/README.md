@@ -8,7 +8,7 @@ Quaver comes with a fully featured editor that contains many different tools to 
 
 * [Getting Started](/docs/Editor/Getting_started)
 * [Editor Functions](/docs/Editor/Editor_functions)
-* [Plugins](/docs/Editor/plugins)
+* [Plugins](/docs/plugins)
 
 ## I made a map in another game and I want to upload it to Quaver's website!
 

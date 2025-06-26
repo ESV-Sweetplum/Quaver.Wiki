@@ -12,25 +12,11 @@ style, and let you do nearly everything the normal editor would let you do. They
 are written in the Lua language.
 
 ## Adding plugins
-
-Plugins are defined by a folder structure built up in following way:
-
-* Quaver/Plugins
-    * YourPlugin
-        * plugin.lua
-        * settings.ini
-    * AnotherPlugin
-        * plugin.lua
-        * settings.ini
-
-Each individual folder that contains a `plugin.lua` and a `settings.ini` file
-represents a separate plugin.
-
 *Adding* a plugin is done by adding a folder that contains a `plugin.lua` file
 and a `settings.ini` file to your `Quaver/Plugins` folder. You can find your
 Quaver folder by searching for "Open Game folder" in the in-game settings, or by
-going to your Steam Library, right-clicking Quaver and selecting Manage > Browse
-local files.
+going to your Steam Library, right-clicking Quaver and selecting **Manage > Browse
+local files**.
 
 The plugin should show up in your Plugins dropdown the next time you open the
 editor. Do keep in mind that the plugin will show up with the name specified in
@@ -40,37 +26,6 @@ However, the process of *getting* a plugin can be slightly different depending
 on where the plugin is hosted or shared. In the case that the plugin is
 hosted on GitHub, you can click on the green "Download Code" button, and
 download it as a ZIP file. Then unzip the file to get a folder.
-
-## Creating your own plugin
-
-To start out, create a new folder, a `plugin.lua` and a `settings.ini` file in
-your `Quaver/Plugins` folder in the layout described in
-[Adding Plugins](#adding-plugins).
-
-Fill in your plugin's metadata in your `settings.ini` file like this:
-
-```ini
-[Settings]
-Name = Plugin Name
-Author = Your Name
-Description = Your description
-```
-
-This is the data that will be shown in the plugins dropdown in the editor.
-
-Next, fill in your `plugin.lua` file like this:
-
-```lua
-function draw()
-    imgui.Begin("Window Title")
-    imgui.Text("Hello World!")
-    imgui.End()
-end
-```
-
-Each plugin starts out in the `draw()` function as an entry point and goes on
-from there, similar to how a `main()` would function in other languages. You can
-start adding plugin elements from here on.
 
 ## Quaver Plugin Guide
 

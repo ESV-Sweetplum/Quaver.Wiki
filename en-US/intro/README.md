@@ -8,6 +8,7 @@ Welcome to the Quaver wiki! Here you can find a bunch of information related to 
 
 * [Gameplay](/docs/gameplay)
 * [Editor](/docs/editor)
+* [Plugins](/docs/plugins)
 * [Rules](/docs/rules)
 * [Skins](/docs/skins)
 * [Multiplayer](/docs/multiplayer)
