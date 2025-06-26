@@ -7,6 +7,21 @@ name: Immediate GUI
 ## Introduction to Immediate GUI
 Assuming you're following the guide, you should now have a very basic plugin with a very basic window. Remember that `draw()` is being called every frame, meaning the window is "created" and "destroyed" each frame. The advantage of this is that you will not have to deal with frame managements, event listeners, or other inter-frame structures. Instead, since everything is rendered fresh each frame (drastic oversimplification), all of your logic only has to worry about what the user is doing in the current frame.
 
+## Display Elements
+Things like text and separators are easy to render because they don't change between frames. Let's try it:
+```lua
+-- YourPlugin/plugin.lua
+
+function draw()
+  imgui.Begin("Talking Box")
+
+  imgui.Text("I'm text number 1.")
+  imgui.Separator()
+  imgui.Text("And I'm text number 2!")
+
+  imgui.End()
+end
+``` 
 ## State
 Of course, if the plugin is being "refreshed" every frame, then variables will be "refreshed" as well, which is not ideal. To bypass this, we will use the built-in `state` global, which allows you to save data in-between frames. Take the following code as an example:
 
